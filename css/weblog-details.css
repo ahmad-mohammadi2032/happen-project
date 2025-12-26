@@ -1,0 +1,103 @@
+.weblog-details-container {
+  margin: 3rem 0;
+}
+
+/* RIGHT SECTION */
+
+.weblog-details-container .right-details .writer-info {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  color: #777;
+}
+
+@media screen and (max-width: 575px) {
+  .weblog-details-container .right-details .writer-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.weblog-details-container .right-details .weblog-title {
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.weblog-details-container .right-details .weblog-text {
+  color: #555;
+  line-height: 2.1rem;
+  font-size: 1.1rem;
+}
+
+/* LEFT SECTION */
+.weblog-details-container .left-details {
+  position: sticky;
+  top: 5rem;
+}
+
+.weblog-details-container .left-details .copy-box {
+  padding: 0.5rem 1rem;
+  border: 1px dashed #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media screen and (max-width: 575px) {
+  .weblog-details-container .left-details .copy-box {
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .weblog-details-container .left-details .copy-box .copied-text {
+    text-align: center !important;
+  }
+}
+
+.weblog-details-container .left-details .copy-box .copy-btn:hover {
+  color: #333 !important;
+  transform: scale(1.1);
+}
+
+.weblog-details-container .left-details .copy-box .copied-text {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+/* title and its right shape line */
+.weblog-details-container .left-details .left-details-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.weblog-details-container .left-details .left-details-title .title-line {
+  display: block;
+  width: 33px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--primary-color);
+  margin-right: -1.6rem;
+  margin-left: 1rem;
+}
+
+/* newest weblogs */
+
+.weblog-details-container .newest-blog-box .newest-blog-item:not(:last-child) {
+  border-bottom: 1px dashed #555;
+}
+
+.weblog-details-container .newest-blog-box .newest-blog-link {
+  padding: 0.65rem 0;
+  display: block;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.weblog-details-container .newest-blog-box .newest-blog-link:hover {
+  color: #333;
+}

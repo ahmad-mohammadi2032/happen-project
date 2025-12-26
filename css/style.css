@@ -1,4 +1,4 @@
-/*------------ top header styles ------------*/
+last-weblog-img/*------------ top header styles ------------*/
 header #top-header .top-header-item {
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ header #bottom-header .bottom-header-link {
 }
 
 header #bottom-header .bottom-header-link i {
-  margin-right: 0.3rem;
+  margin-left: 0.3rem;
 }
 
 /* close header list button */
@@ -242,6 +242,7 @@ header #main-header .main-header-buttons-wrapper #services-btn:hover {
 .services-container {
   padding-top: 5rem;
   position: relative;
+  overflow: hidden;
 }
 
 .services-container::after {
@@ -570,7 +571,7 @@ header #main-header .main-header-buttons-wrapper #services-btn:hover {
 
 .statistics-container .statistics-list .statistic-icon {
   width: 55px;
-  margin-left: 1.5rem;
+  margin-inline-end: 1.5rem;
 }
 
 .statistics-container .statistics-list .statistic-number {
@@ -810,7 +811,7 @@ header #main-header .main-header-buttons-wrapper #services-btn:hover {
 .main-footer .last-weblogs-container .last-weblog-item .last-weblog-img {
   width: 100px;
   height: 60px;
-  margin-left: 1rem;
+  margin-inline-end: 1rem;
 }
 
 .main-footer .last-weblogs-container .last-weblog-item .last-weblog-date {

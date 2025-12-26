@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa-IR" dir="rtl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>تماس با ما | وبسایت سیلندر سازی هپن</title>
+    <title>جزئیات وبلاگ | وبسایت سیلندر سازی هپن</title>
     <link
       rel="stylesheet"
       href="../assets/font-awesome/css/all-fonts.min.css"
@@ -12,9 +12,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/contact-us.css" />
+    <link rel="stylesheet" href="../css/weblog-details.css" />
   </head>
   <body>
     <!-------------- HEADER SECTION -------------->
@@ -68,28 +73,12 @@
             <!-- under menu -->
             <ul class="header-list d-md-flex">
               <li class="mx-3 bottom-header-item">
-                <a href="#" class="px-2 gg bottom-header-link">خانه</a>
+                <a href="/" class="px-2 gg bottom-header-link">خانه</a>
               </li>
               <li class="mx-3 bottom-header-item">
-                <a href="#" class="px-2 bottom-header-link"
+                <a href="../index.html#weblogs" class="px-2 bottom-header-link"
                   >وبلاگ
-                  <i class="fa fa-angle-down"></i>
                 </a>
-                <!-- under menu -->
-                <ul class="under-menu-list">
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 1</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 2</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 3</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 4</a>
-                  </li>
-                </ul>
               </li>
 
               <li class="mx-3 bottom-header-item">
@@ -114,28 +103,12 @@
                 </ul>
               </li>
               <li class="mx-3 bottom-header-item">
-                <a href="#" class="px-2 bottom-header-link">درباره ما</a>
+                <a href="./about-us.html" class="px-2 bottom-header-link"
+                  >درباره ما</a
+                >
               </li>
               <li class="mx-3 bottom-header-item">
-                <a href="#" class="px-2 bottom-header-link"
-                  >تماس با ما
-                  <i class="fa fa-angle-down"></i>
-                </a>
-                <!-- under menu -->
-                <ul class="under-menu-list">
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 1</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 2</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 3</a>
-                  </li>
-                  <li class="under-menu-item">
-                    <a href="#" class="under-menu-link">test item 4</a>
-                  </li>
-                </ul>
+                <a href="#" class="px-2 bottom-header-link">تماس با ما </a>
               </li>
             </ul>
           </nav>
@@ -147,53 +120,111 @@
         </div>
       </section>
     </header>
-    <div class="contact-us-container my-5 py-3">
-      <div class="container-lg">
-        <div class="row justify-content-center justify-content-lg-between">
-          <section class="col-12 col-sm-10 col-lg-6 mb-5">
-            <h2 class="mb-4">تماس با ما</h2>
-            <p class="lead text-secondary">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
-              voluptatibus autem nemo debitis nisi iusto iure voluptas porro eos
-              consequuntur!
-            </p>
-          </section>
-          <section class="col-12 col-sm-8 col-lg-5">
-            <!-- contact us form -->
-            <div class="contact-us-form-container shadow p-3 rounded">
-              <form action="#">
-                <div class="mb-3">
-                  <label for="first name" class="mb-1 d-block">نام</label>
-                  <input type="text" id="first name" class="form-control" />
-                </div>
-                <div class="mb-3">
-                  <label for="last name" class="mb-1 d-block"
-                    >نام خانوادگی</label
-                  >
-                  <input type="text" id="last name" class="form-control" />
-                </div>
-                <div class="mb-3">
-                  <label for="email" class="mb-1 d-block">ایمیل</label>
-                  <input type="email" id="email" class="form-control" />
-                </div>
 
-                <div class="mb-3">
-                  <label for="area" class="mb-1"
-                    >هر چه دل تنگت میخاهد بنویس!</label
-                  >
-                  <textarea
-                    id="area"
-                    cols="40"
-                    rows="2"
-                    class="form-control"
-                  ></textarea>
+    <!--------------- WEBLOG DETAILS --------------->
+    <div class="weblog-details-container">
+      <div class="container-xl">
+        <div class="row gap-5 gap-lg-0">
+          <div class="col-12 col-lg-8">
+            <div class="right-details rounded-4 shadow p-4">
+              <h1>بهترین زبان های برنامه نویسی در ۲۰۲۳</h1>
+              <hr />
+              <!-- write & date -->
+              <div class="writer-info">
+                <div class="d-flex align-items-center">
+                  <i class="fa fa-user-o me-2"></i>
+                  <p>نوشته از شهید حشمت ستاری</p>
                 </div>
-                <button class="btn btn-primary" type="submit">
-                  ثبت اطلاعات
-                </button>
-              </form>
+                <div class="d-flex align-items-center">
+                  <i class="fa fa-calendar-o me-2"></i>
+                  <p>۱۴۰۲/۰۸/۰۲</p>
+                </div>
+              </div>
+              <img
+                src="../assets/images/coder-boy.webp"
+                alt="weblog image"
+                class="img-fluid rounded mb-3"
+              />
+              <!-- weblog text -->
+              <div>
+                <h3 class="weblog-title">
+                  آیا جاوااسکریپت بهترین زبان برنامه نویسی است؟
+                </h3>
+                <p class="weblog-text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+                <hr />
+                <p class="weblog-text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و
+                  با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی
+                  تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
+                  آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم
+                  افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص
+                  طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این
+                  صورت می توان امید داشت که تمام و دشواری موجود در ارائه
+                  راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل
+                  حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای
+                  موجود طراحی اساسا مورد استفاده قرار گیرد.
+                </p>
+              </div>
             </div>
-          </section>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="left-details">
+              <!-- copy box -->
+              <div class="rounded-4 mb-5 shadow p-4 overflow-hidden">
+                <h4 class="left-details-title">
+                  <span class="title-line"></span>
+                  <span>لینک کوتاه:</span>
+                </h4>
+                <div class="copy-box">
+                  <button class="copy-btn btn fs-5 text-secondary">
+                    <i class="fa fa-clipboard"></i>
+                  </button>
+                  <p class="text-secondary copied-text">
+                    https://happenengrave.com https://happenengrave.com
+                  </p>
+                </div>
+              </div>
+
+              <!-- newest weblogs -->
+              <div
+                class="rounded-4 shadow p-4 pb-2 overflow-hidden newest-blog-box"
+              >
+                <h4 class="left-details-title">
+                  <span class="title-line"></span>
+                  <span>جدیدترین نوشته ها</span>
+                </h4>
+                <ul>
+                  <li class="newest-blog-item">
+                    <a href="#" class="newest-blog-link">blah blah blah 1</a>
+                  </li>
+                  <li class="newest-blog-item">
+                    <a href="#" class="newest-blog-link">blah blah blah 2</a>
+                  </li>
+                  <li class="newest-blog-item">
+                    <a href="#" class="newest-blog-link">blah blah blah 3</a>
+                  </li>
+                  <li class="newest-blog-item">
+                    <a href="#" class="newest-blog-link">blah blah blah 4</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -307,7 +338,10 @@
     </footer>
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="../js/contact-us.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="../js/weblog-details.js"></script>
   </body>
 </html>

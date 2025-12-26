@@ -15,6 +15,7 @@ headerCloseButton.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
+
 headerNavbar.addEventListener("click", (e) => {
   const element = e.target;
   if (element.classList.contains("show-header-navbar")) {
@@ -32,4 +33,33 @@ window.addEventListener("scroll", (e) => {
   } else {
     bottomHeader.classList.remove("fixed-header");
   }
+});
+
+// copy text in clipboard when click to copy button
+const copyButton = document.querySelector(".copy-btn");
+const copyText = document.querySelector(".copied-text");
+
+copyButton.addEventListener("click", () => {
+  const copyInput = document.createElement("input");
+  copyInput.setAttribute("type", "text");
+  copyInput.setAttribute("value", copyText.textContent.trim());
+  document.body.appendChild(copyInput);
+
+  copyInput.select();
+  copyInput.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  copyInput.remove();
+
+  // show success alert that link copied!
+  Toastify({
+    text: "با موفقیت کپی شد.",
+    duration: 2000,
+    close: false,
+    gravity: "top",
+    position: "left",
+    stopOnFocus: true,
+    style: {
+      background: "linear-gradient(to right, #00b09b, #96c93d)",
+    },
+  }).showToast();
 });

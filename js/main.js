@@ -34,27 +34,6 @@ window.addEventListener("scroll", (e) => {
   }
 });
 
-// COMMENTS SWIPPER
-const commentSlider = new Swiper(".comments-slider", {
-  slidesPerView: 1,
-  spaceBetween: 60,
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    1100: {
-      slidesPerView: 3,
-      simulateTouch: false,
-    },
-  },
-  speed: 1600,
-  autoplay: true,
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
-commentSlider.update();
-
 // TOGGLE BETWEEN QUESTIONS ANSWER
 const questionItems = document.querySelectorAll(".question-item");
 const answerBoxs = document.querySelectorAll(".answer-box");
