@@ -66,6 +66,7 @@
   font-size: 1.1rem;
   text-align: left;
   width: 100%;
+  word-break:break-all;
 }
 
 /* title and its right shape line */
