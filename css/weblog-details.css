@@ -65,6 +65,7 @@
 .weblog-details-container .left-details .copy-box .copied-text {
   font-size: 1.1rem;
   text-align: left;
+  width: 100%;
 }
 
 /* title and its right shape line */
@@ -81,8 +82,7 @@
   height: 8px;
   border-radius: 2px;
   background: var(--primary-color);
-  margin-right: -1.6rem;
-  margin-left: 1rem;
+  margin-right: 0.6rem;
 }
 
 /* newest weblogs */

@@ -15,7 +15,6 @@ headerCloseButton.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
-
 headerNavbar.addEventListener("click", (e) => {
   const element = e.target;
   if (element.classList.contains("show-header-navbar")) {
@@ -52,7 +51,7 @@ copyButton.addEventListener("click", () => {
 
   // show success alert that link copied!
   Toastify({
-    text: "با موفقیت کپی شد.",
+    text: "Erfolgreich kopiert.",
     duration: 2000,
     close: false,
     gravity: "top",
